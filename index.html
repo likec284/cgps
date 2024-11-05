@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our CGPA Calculator and GPA Calculator to accurately compute your academic performance. Learn how to calculate CGPA from GPA, out of 4, and convert CGPA to percentage.">
+        <meta name="keywords" content="CGPA Calculator, CGPA to Percentage, How to Calculate CGPA, CGPA to Percentage Calculator, CGPA, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, How to Calculate CGPA Out of 4, How to Calculate GPA and CGPA, How to Check CGPA, How to Find CGPA, How to Find CGPA from GPA, University CGPA Calculator, GPA Calculator, Grade Calculator, CGPA Calculator, GPA, Grading Calculator, GPA Estimator, Cumulative GPA Calculator, Calculate My Cumulative GPA, Cumulative GPA, GPA Scale, GPAs, Meaning of GPA, LSAC GPA Calculator, Calculate My GPA, CGPA to Percentage, GPA to Percentage, How to Calculate CGPA, University Acceptance Calculator, CGPA to Percentage Calculator, Calculate Major GPA, Percentage to GPA Calculator, GPA to Percentage Calculator, LSAC GPA Converter, How to Find CGPA from GPA, How to Find CGPA, How to Check CGPA, How to Calculate GPA and CGPA, How to Calculate CGPA Out of 4, How to Calculate CGPA in University, GPA with Percentage, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, GP Calculator, Get My GPA, Find GPA from Percentage, Conversion of Percentage into GPA, Calculator GP, Calculate GPA Calculator, How to Calculate GPA">
+        
+    <title>CGPA and GPA Calculator - How to Calculate CGPA out of 4</title>
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoXJXRXAHTjstqvA_ijuzz_sowCSLRbkOKTAWuL7PTMSoC03kjwmcVWEyXieQ96DucKTCYlT5BRJi57iq_NtMmgy__wM7gPE6Fz21TB9xUzHoKdrs8XvCh0BvOqRoZxLPkrN2TNcg_UhGYA-c8MC0z2GbQQl5G9ZKxlHCWGw0dXPBDcJRNZy2tyO9sOByf/s1200/CGPA%20&%20GPA%20CALCULATOR-.png" type="image/png">
+
+    <style>
+        /* Default to Mode 1 */
+body.mode-1 {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7zdyctLbFRmrdZitDCLGtKVep4fQCNQfc0yDiITdx43CgkNbCFzayZ-q71HR2-Sfz269yyQPLf5dwl2bzj2Ye92D1sGkcZ7JtOk2NyHQoffHJ5VeVLEkbUlFMtf4fvEjitZOBMJUBsnNSOgONuVyGmOHQSU15hHs8lvo9dVIVUb7pLwemO2isSSRrxFdH/s320/macos-bg.jpg') repeat fixed top left;
+    background-size: 1000px 800px;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container.mode-1 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: var(--main-body);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+body.mode-2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container.mode-2 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+        .header {
+    background-color: #003366;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000; /* Ensure the header is on top of other content */
+}
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+.header .menu {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.header .menu a:hover {
+    text-decoration: underline;
+}
+.header .toggle-button {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header .toggle-button {
+        display: block;
+    }
+    .header .menu {
+        display: none;
+        flex-direction: column;
+        width: 30%; /* Set to 30% width */
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 1000;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    }
+    .header .menu a {
+        padding: 10px;
+        border-top: 1px solid #fff;
+    }
+    .header .menu.show {
+        display: flex;
+    }
+}
+@media (min-width: 769px) {
+    .header {
+        justify-content: center;
+    }
+    .header .menu {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+    }
+    .header .logo {
+        position: absolute;
+        left: 20px;
+    }
+    .header .toggle-button {
+        display: none;
+    }
+}.footer {
+    background-color: #e1e1e1;
+    color: rgb(82, 79, 79);
+    padding: 5px;
+     
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.footer .footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer .footer-links,
+.footer .social-media {
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-links a,
+.footer .social-media a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+}
+.footer .social-media img {
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.footer p {
+    margin: 5px 0 0;
+    white-space: nowrap;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Added box-shadow property */
+}
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+        } 
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .remove-button {
+            background-color: #dc3545;
+        }
+        .remove-button:hover {
+            background-color: #c82333;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid hsla(228, 88%, 51%, 0.966);
+            margin-bottom: 15px;
+        }
+        .remove-semester,
+        .remove-course {
+            display: none;
+            margin-top: 10px;
+        }
+        .course-container {
+            margin-top: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        } 
+        .content-left {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+}
+ 
+ 
+    .cgpa-heading {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(45deg, #007bff, #00c6ff, #95f556, #7243df); /* Gradient background */
+        -webkit-background-clip: text; /* WebKit-based browsers */
+        background-clip: text; /* Non-WebKit browsers */
+        color: transparent; /* Ensure text color is transparent to show gradient */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        margin-bottom: 0px;
+        padding:  0px;
+         
+         
+        text-align: center; /* Center align text */
+    }.toggle-mode {
+    cursor: pointer; /* Change cursor to hand */
+     
+    color: #ffffff; /* Optional: Change text color to match button */
+    font-size: 1em; /* Adjust font size if necessary */
+    margin-left: 10px; /* Adjust margin if needed */
+}
+
+.toggle-mode:hover {
+    color: #ffffff; /* Optional: Change color on hover */
+    text-decoration: underline; /* Ensure underline effect is maintained on hover */
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShQezOhQWqHUlyWGkwxfhLmoNmbQD5DqY-fSf1wTSQ3jV0P_JEEWNPEdgPDQPacavSXubzw2rCpuadAmXHN8xu4Tds_EbHejbPmPPNtUQPcuslCaXNyyrgHK3BMrSakSSDLrllv4jhPMj4wrdS3GSZ1P5Olslo38nSlISqptJJcv27E-ECk7ypRMQ67v5/s667/cgpa1.png" alt="CGPA CALCULATOR"style="border-radius: 10px;">
+        </div>
+           
+        
+        <div class="menu" id="menu">
+            <a href="cgpa-gpa-calculator.html">CGPA Calculator </a>
+            <a href="about_us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <div class="toggle-mode" onclick="toggleMode()">Switch Mode</div>
+
+        <div class="toggle-button" onclick="toggleMenu()">Tools☰</div>
+    </div>
+    
+    </div>
+
+    <div class="container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh2sqTUYrLwDxn_E59W9RfvqukJxWF2D3Q0waXKTdvL5qQv-bL-lSUXyrfU51vsHbk7hR3gIDCIZKnit0H1m5SNN63FMFuLUktWH2y7sAYzOv9Ac7Hk7nNtlGoFX4Vud1TLmSqQcktErxc6KosywWUfJy33ffiTSotYDbxmPgifQZj2H2Okn8TxDAi2jxJK/s1408/cgpaand%20gpa.png" alt="CGPA Calculator" style="width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px;">
+        <h1 class="cgpa-heading">CGPA Calculator</h1>
+        <div id="cgpa-calculator">
+            <div id="semester-fields">
+                <div class="form-group">
+                    <input type="number" step="0.01" id="semester1-gpa" placeholder="Semester 1 GPA">
+                </div>
+                <div class="form-group">
+                    <input type="number" step="0.01" id="semester2-gpa" placeholder="Semester 2 GPA">
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="button" id="add-semester">Add Another Semester</button>
+                <button class="button" id="calculate-cgpa">Calculate CGPA</button>
+                <button class="button remove-button remove-semester" id="remove-semester">Remove Semester</button>
+            </div>
+            <div class="result" id="cgpa-result"></div>
+        </div>
+
+        <h1 class="cgpa-heading">GPA Calculator</h1>
+        <div id="gpa-calculator">
+            <div id="course-fields">
+                <div class="course-container" id="course-container">
+                    <div class="form-group">
+                        <input type="number" step="0.01" id="course1-points" placeholder="Course 1 Points">
+                        <input type="number" step="0.01" id="course1-credit-hours" placeholder="Course 1 Credit Hours">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" step="0.01" id="course2-points" placeholder="Course 2 Points">
+                        <input type="number" step="0.01" id="course2-credit-hours" placeholder="Course 2 Credit Hours">
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="button" id="add-course">Add Another Course</button>
+                <button class="button" id="calculate-gpa">Calculate GPA</button>
+                <button class="button remove-button remove-course" id="remove-course">Remove Course</button>
+            </div>
+            <div class="result" id="gpa-result"></div>
+        </div>
+        <br>
+        <hr>
+        <h1>Welcome to the Ultimate CGPA Calculator and GPA Calculator</h1>
+    </header>
+    <section class="content">
+        <div class="content-left">
+            <h2>Understanding the CGPA Calculator and GPA Calculator</h2>
+            <p>Welcome to our <strong>CGPA Calculator</strong> and <strong>GPA Calculator</strong>, your reliable tools for accurately computing your academic performance. Whether you're a student trying to figure out your semester results or planning your academic future, understanding your <strong>CGPA</strong> and <strong>GPA</strong> is crucial.</p>
+        
+            <h2>What is a CGPA Calculator?</h2>
+            <p>A <strong>CGPA Calculator</strong> helps you determine your <strong>Cumulative Grade Point Average (CGPA)</strong> efficiently. By inputting your grades and credit hours, you can instantly get your academic standing. Our <strong>CGPA Calculator</strong> is designed with simplicity and accuracy in mind, offering an intuitive user interface for easy navigation.</p>
+        
+            <h2>How to Calculate CGPA</h2>
+            <p>Calculating your <strong>CGPA</strong> is straightforward with our tool. Here’s a step-by-step guide on <strong>how to calculate CGPA</strong>:</p>
+            <ol>
+                <li>Enter each course's grade and credit hours for the semester.</li>
+                <li>Add up the total grade points earned by multiplying the grade points by the credit hours for each course.</li>
+                <li>Divide the total grade points by the total credit hours to get your GPA for the semester.</li>
+                <li>Average the semester GPAs to find your cumulative GPA.</li>
+            </ol>
+        
+            <h2>How to Calculate CGPA from GPA</h2>
+            <p>If you’re wondering <strong>how to calculate CGPA from GPA</strong>, follow these steps:</p>
+            <ol>
+                <li><strong>Calculate GPA</strong> for each semester using our <strong>GPA Calculator</strong>.</li>
+                <li><strong>Average the semester GPAs</strong> to determine your <strong>CGPA</strong>.</li>
+            </ol>
+        
+            <h2>How to Calculate CGPA Out of 4</h2>
+            <p>Many institutions use a scale out of 4.0 to calculate CGPA. Here’s <strong>how to calculate CGPA out of 4</strong>:</p>
+            <ol>
+                <li>Determine your GPA using the method described above.</li>
+                <li>Convert your GPA to a 4.0 scale by multiplying your GPA by 4 and dividing by the maximum GPA of your scale (e.g., if your GPA is on a scale of 10, convert it to a 4-point scale by multiplying by 4 and dividing by 10).</li>
+            </ol>
+        
+            <h2>How to Convert CGPA to Percentage</h2>
+            <p><strong>CGPA to Percentage Calculator</strong> tools can help you convert your CGPA into a percentage. Generally, the conversion formula is:</p>
+            <p><code>Percentage = (CGPA - 0.75) × 10</code></p>
+            <p>For instance, if your <strong>CGPA</strong> is 7.5, your percentage would be:</p>
+            <p><code>(7.5 - 0.75) × 10 = 67.5%</code></p>
+        
+            <h2>How to Check CGPA</h2>
+            <p>To <strong>check CGPA</strong>, use our online tool for accurate and quick results. Simply enter your grades and credit hours, and our <strong>CGPA Calculator</strong> will provide your current CGPA.</p>
+        
+            <h2>Why Use Our CGPA Calculator?</h2>
+            <p>Our <strong>CGPA calculator</strong> offers several benefits:</p>
+            <ul>
+                <li><strong>Instant Results</strong>: Get your <strong>CGPA</strong> and <strong>GPA</strong> calculated quickly.</li>
+                <li><strong>User-Friendly Interface</strong>: Designed for easy navigation.</li>
+                <li><strong>Accurate Calculations</strong>: Reliable results based on your inputs.</li>
+            </ul>
+        
+            <h2>Start Calculating Your CGPA and GPA Today!</h2>
+            <p>Whether you're calculating your current standing or planning for future semesters, our <strong>CGPA Calculator</strong> is here to assist you. <strong>Start using it today</strong> to stay on top of your academic performance.</p>
+        </div>
+        
+        <!-- SEO Tags -->
+        <meta name="description" content="Use our CGPA Calculator and GPA Calculator to accurately compute your academic performance. Learn how to calculate CGPA from GPA, out of 4, and convert CGPA to percentage.">
+        <meta name="keywords" content="CGPA Calculator, CGPA to Percentage, How to Calculate CGPA, CGPA to Percentage Calculator, CGPA, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, How to Calculate CGPA Out of 4, How to Calculate GPA and CGPA, How to Check CGPA, How to Find CGPA, How to Find CGPA from GPA, University CGPA Calculator, GPA Calculator, Grade Calculator, CGPA Calculator, GPA, Grading Calculator, GPA Estimator, Cumulative GPA Calculator, Calculate My Cumulative GPA, Cumulative GPA, GPA Scale, GPAs, Meaning of GPA, LSAC GPA Calculator, Calculate My GPA, CGPA to Percentage, GPA to Percentage, How to Calculate CGPA, University Acceptance Calculator, CGPA to Percentage Calculator, Calculate Major GPA, Percentage to GPA Calculator, GPA to Percentage Calculator, LSAC GPA Converter, How to Find CGPA from GPA, How to Find CGPA, How to Check CGPA, How to Calculate GPA and CGPA, How to Calculate CGPA Out of 4, How to Calculate CGPA in University, GPA with Percentage, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, GP Calculator, Get My GPA, Find GPA from Percentage, Conversion of Percentage into GPA, Calculator GP, Calculate GPA Calculator, How to Calculate GPA">
+        
+    </section>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-row footer-links">
+                © CGPA & GPA Calculator 2024.
+           
+            <div class="footer-row social-media">
+                <a href="https://x.com/unaqqash6" target="_blank" title="Twitter">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDhZBUZSCsW-qt3ZynfqJQYfvrtRkPyECCnoUs0ak2jpxNDKzaIt7Z_8zvDxwMFEq1YXHdSoAddeTazZ-zoqGIdNCjKbWzXgJxB8YfCmSccclOY3Ylc80p09o4gRJSV6v7LDnRJ4W3OpBtpJwvw6Zv-J5ruHDA1svIPdno39NH5kQmQiDnxjsTYai5hg0N/s512/twitter-icon.png" alt="Twitter">
+                <a href="https://www.facebook.com/profile.php?id=61564209240946" target="_blank" title="Facebook">
+                
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMT6-wEgoRu3vYxGfHbR86sWZp5W0ahXhqbgeFu-u5WurHUEuW6o3BX9ng-iUSQtT84s9iVLsho8hvb2T2iEv7Jb8X65OZJ532dsbn9EQ-dJDrVGBiZmvRsxaKWOC1PKYrshprPu2kDtK2idvnj56nXjpEvrSsR2q5vQORPcN6UlRbF8PwCqZnyg3Gy-jG/s320/facebook-icon.png" alt="Facebook">        
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        let semesterCount = 2;
+        let courseCount = 2;
+
+        function addSemester() {
+            semesterCount++;
+            const semesterFields = document.getElementById('semester-fields');
+            const newField = document.createElement('div');
+            newField.className = 'form-group';
+            newField.innerHTML = `<input type="number" step="0.01" placeholder="Semester ${semesterCount} GPA">`;
+            semesterFields.appendChild(newField);
+
+            document.getElementById('remove-semester').style.display = 'inline-block';
+        }
+
+        function removeSemester() {
+            if (semesterCount > 2) {
+                const semesterFields = document.getElementById('semester-fields');
+                semesterFields.removeChild(semesterFields.lastChild);
+                semesterCount--;
+
+                if (semesterCount === 2) {
+                    document.getElementById('remove-semester').style.display = 'none';
+                }
+            }
+        }
+
+        function calculateCGPA() {
+            let totalGPA = 0;
+            let semesterFields = document.querySelectorAll('#semester-fields input');
+            semesterFields.forEach(field => {
+                const gpa = parseFloat(field.value);
+                if (!isNaN(gpa)) {
+                    totalGPA += gpa;
+                }
+            });
+            const cgpa = (totalGPA / semesterCount).toFixed(2);
+            document.getElementById('cgpa-result').innerText = 'Your CGPA is: ' + cgpa;
+        }
+
+        function addCourse() {
+            courseCount++;
+            const courseContainer = document.getElementById('course-container');
+            const newField = document.createElement('div');
+            newField.className = 'form-group';
+            newField.innerHTML = `<input type="number" step="0.01" placeholder="Course ${courseCount} Points">
+                                  <input type="number" step="0.01" placeholder="Course ${courseCount} Credit Hours">`;
+            courseContainer.appendChild(newField);
+
+            document.getElementById('remove-course').style.display = 'inline-block';
+        }
+
+        function removeCourse() {
+            if (courseCount > 2) {
+                const courseContainer = document.getElementById('course-container');
+                courseContainer.removeChild(courseContainer.lastChild);
+                courseCount--;
+
+                if (courseCount === 2) {
+                    document.getElementById('remove-course').style.display = 'none';
+                }
+            }
+        }
+
+        function calculateGPA() {
+            let totalPoints = 0;
+            let totalCreditHours = 0;
+            const courseFields = document.querySelectorAll('#course-container .form-group');
+            courseFields.forEach(field => {
+                const points = parseFloat(field.querySelector('input[placeholder*="Points"]').value);
+                const creditHours = parseFloat(field.querySelector('input[placeholder*="Credit Hours"]').value);
+                if (!isNaN(points) && !isNaN(creditHours)) {
+                    totalPoints += points * creditHours;
+                    totalCreditHours += creditHours;
+                }
+            });
+            const gpa = (totalPoints / totalCreditHours).toFixed(2);
+            document.getElementById('gpa-result').innerText = 'Your GPA is: ' + gpa;
+        }
+
+        document.getElementById('add-semester').addEventListener('click', addSemester);
+        document.getElementById('remove-semester').addEventListener('click', removeSemester);
+        document.getElementById('calculate-cgpa').addEventListener('click', calculateCGPA);
+        document.getElementById('add-course').addEventListener('click', addCourse);
+        document.getElementById('remove-course').addEventListener('click', removeCourse);
+        document.getElementById('calculate-gpa').addEventListener('click', calculateGPA);
+
+        function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+}
+
+// Close menu if clicked outside
+document.addEventListener('click', event => {
+    if (!event.target.closest('.header')) {
+        const menu = document.getElementById('menu');
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    }
+});
+
+
+        function handleClickOutside(event) {
+            const menu = document.getElementById('menu');
+            const toggleButton = document.querySelector('.toggle-button');
+            if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+                menu.style.display = 'none';
+                document.removeEventListener('click', handleClickOutside, true);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+    const savedMode = localStorage.getItem('mode');
+    const body = document.body;
+    const container = document.querySelector('.container');
+
+    if (savedMode) {
+        body.classList.add(savedMode);
+        container.classList.add(savedMode);
+    } else {
+        body.classList.add('mode-1');
+        container.classList.add('mode-1');
+    }
+});
+
+function toggleMode() {
+    const body = document.body;
+    const container = document.querySelector('.container');
+    const currentMode = body.classList.contains('mode-1') ? 'mode-1' : 'mode-2';
+
+    if (currentMode === 'mode-1') {
+        body.classList.replace('mode-1', 'mode-2');
+        container.classList.replace('mode-1', 'mode-2');
+    } else {
+        body.classList.replace('mode-2', 'mode-1');
+        container.classList.replace('mode-2', 'mode-1');
+    }
+
+    localStorage.setItem('mode', body.classList.contains('mode-1') ? 'mode-1' : 'mode-2');
+}
+
+    </script>
+</body>
+</html>

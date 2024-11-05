@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use our CGPA Calculator and GPA Calculator to accurately compute your academic performance. Learn how to calculate CGPA from GPA, out of 4, and convert CGPA to percentage.">
+        <meta name="keywords" content="CGPA Calculator, CGPA to Percentage, How to Calculate CGPA, CGPA to Percentage Calculator, CGPA, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, How to Calculate CGPA Out of 4, How to Calculate GPA and CGPA, How to Check CGPA, How to Find CGPA, How to Find CGPA from GPA, University CGPA Calculator, GPA Calculator, Grade Calculator, CGPA Calculator, GPA, Grading Calculator, GPA Estimator, Cumulative GPA Calculator, Calculate My Cumulative GPA, Cumulative GPA, GPA Scale, GPAs, Meaning of GPA, LSAC GPA Calculator, Calculate My GPA, CGPA to Percentage, GPA to Percentage, How to Calculate CGPA, University Acceptance Calculator, CGPA to Percentage Calculator, Calculate Major GPA, Percentage to GPA Calculator, GPA to Percentage Calculator, LSAC GPA Converter, How to Find CGPA from GPA, How to Find CGPA, How to Check CGPA, How to Calculate GPA and CGPA, How to Calculate CGPA Out of 4, How to Calculate CGPA in University, GPA with Percentage, How Can We Calculate CGPA, How Do We Calculate CGPA, How to Calculate a CGPA, How to Calculate CGPA from GPA, GP Calculator, Get My GPA, Find GPA from Percentage, Conversion of Percentage into GPA, Calculator GP, Calculate GPA Calculator, How to Calculate GPA">
+        
+    <title>CGPA and GPA Calculator - How to Calculate CGPA out of 4</title>
+    <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoXJXRXAHTjstqvA_ijuzz_sowCSLRbkOKTAWuL7PTMSoC03kjwmcVWEyXieQ96DucKTCYlT5BRJi57iq_NtMmgy__wM7gPE6Fz21TB9xUzHoKdrs8XvCh0BvOqRoZxLPkrN2TNcg_UhGYA-c8MC0z2GbQQl5G9ZKxlHCWGw0dXPBDcJRNZy2tyO9sOByf/s1200/CGPA%20&%20GPA%20CALCULATOR-.png" type="image/png">
+
+    <style>
+        /* Default to Mode 1 */
+body.mode-1 {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7zdyctLbFRmrdZitDCLGtKVep4fQCNQfc0yDiITdx43CgkNbCFzayZ-q71HR2-Sfz269yyQPLf5dwl2bzj2Ye92D1sGkcZ7JtOk2NyHQoffHJ5VeVLEkbUlFMtf4fvEjitZOBMJUBsnNSOgONuVyGmOHQSU15hHs8lvo9dVIVUb7pLwemO2isSSRrxFdH/s320/macos-bg.jpg') repeat fixed top left;
+    background-size: 1000px 800px;
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container.mode-1 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: var(--main-body);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+body.mode-2 {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container.mode-2 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+        .header {
+    background-color: #003366;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1000; /* Ensure the header is on top of other content */
+}
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+.header .menu {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+.header .menu a:hover {
+    text-decoration: underline;
+}
+.header .toggle-button {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header .toggle-button {
+        display: block;
+    }
+    .header .menu {
+        display: none;
+        flex-direction: column;
+        width: 30%; /* Set to 30% width */
+        background-color: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        z-index: 1000;
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+    }
+    .header .menu a {
+        padding: 10px;
+        border-top: 1px solid #fff;
+    }
+    .header .menu.show {
+        display: flex;
+    }
+}
+@media (min-width: 769px) {
+    .header {
+        justify-content: center;
+    }
+    .header .menu {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+    }
+    .header .logo {
+        position: absolute;
+        left: 20px;
+    }
+    .header .toggle-button {
+        display: none;
+    }
+}.footer {
+    background-color: #e1e1e1;
+    color: rgb(82, 79, 79);
+    padding: 5px;
+     
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7em;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+.footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.footer .footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer .footer-links,
+.footer .social-media {
+    display: flex;
+    gap: 10px;
+}
+.footer .footer-links a,
+.footer .social-media a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    margin: 0;
+    white-space: nowrap;
+}
+.footer .social-media img {
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+.footer p {
+    margin: 5px 0 0;
+    white-space: nowrap;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Added box-shadow property */
+}
+        .button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            display: inline-block;
+        } 
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .remove-button {
+            background-color: #dc3545;
+        }
+        .remove-button:hover {
+            background-color: #c82333;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid hsla(228, 88%, 51%, 0.966);
+            margin-bottom: 15px;
+        }
+        .remove-semester,
+        .remove-course {
+            display: none;
+            margin-top: 10px;
+        }
+        .course-container {
+            margin-top: 20px;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        } 
+        .content-left {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+}
+ 
+ 
+    .cgpa-heading {
+        font-size: 3em;
+        font-weight: bold;
+        background: linear-gradient(45deg, #007bff, #00c6ff, #95f556, #7243df); /* Gradient background */
+        -webkit-background-clip: text; /* WebKit-based browsers */
+        background-clip: text; /* Non-WebKit browsers */
+        color: transparent; /* Ensure text color is transparent to show gradient */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        margin-bottom: 0px;
+        padding:  0px;
+         
+         
+        text-align: center; /* Center align text */
+    }.toggle-mode {
+    cursor: pointer; /* Change cursor to hand */
+     
+    color: #ffffff; /* Optional: Change text color to match button */
+    font-size: 1em; /* Adjust font size if necessary */
+    margin-left: 10px; /* Adjust margin if needed */
+}
+
+.toggle-mode:hover {
+    color: #ffffff; /* Optional: Change color on hover */
+    text-decoration: underline; /* Ensure underline effect is maintained on hover */
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiShQezOhQWqHUlyWGkwxfhLmoNmbQD5DqY-fSf1wTSQ3jV0P_JEEWNPEdgPDQPacavSXubzw2rCpuadAmXHN8xu4Tds_EbHejbPmPPNtUQPcuslCaXNyyrgHK3BMrSakSSDLrllv4jhPMj4wrdS3GSZ1P5Olslo38nSlISqptJJcv27E-ECk7ypRMQ67v5/s667/cgpa1.png" alt="CGPA CALCULATOR"style="border-radius: 10px;">
+        </div>
+           
+        
+        <div class="menu" id="menu">
+            <a href="cgpa-gpa-calculator.html">CGPA Calculator </a>
+            <a href="about_us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms</a>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <div class="toggle-mode" onclick="toggleMode()">Switch Mode</div>
+
+        <div class="toggle-button" onclick="toggleMenu()">Tools☰</div>
+    </div>
+    
+    </div>
+
+    <div class="container">
+        
+        <h1 class="cgpa-heading">About Us</h1>
+    
+    </header>
+    <section class="content">
+        <div class="content-left"> 
+        </header>
+    
+        <main>
+            <section>
+                <h2>Welcome to CGPA Calculator</h2>
+                <p>Your go-to resource for calculating CGPA (Cumulative Grade Point Average) and GPA (Grade Point Average) effortlessly! We understand the importance of accurate academic performance tracking, and our mission is to provide students with a user-friendly tool that makes calculating their grades simple and efficient.</p>
+            </section>
+    
+            <section>
+                <h2>Our Mission</h2>
+                <p>At CGPA Calculator, we are committed to helping students achieve their academic goals. Whether you’re in high school, college, or pursuing higher education, we know how critical it is to keep track of your academic progress. Our calculator allows you to quickly and accurately determine your CGPA and GPA, empowering you to make informed decisions about your studies.</p>
+            </section>
+    
+            <section>
+                <h2>Our Features</h2>
+                <ul>
+                    <li><strong>Easy-to-Use Interface:</strong> Our calculator is designed with simplicity in mind. Just input your grades and credits, and let us do the rest!</li>
+                    <li><strong>Accuracy:</strong> We ensure our calculations adhere to standard academic grading systems, providing you with reliable results every time.</li>
+                    <li><strong>Resources:</strong> Alongside our calculator, we offer tips and resources to help you understand CGPA and GPA systems better and improve your academic performance.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Student-Centric Design:</strong> We prioritize the needs of students. Our tool is tailored for ease of use, making it accessible for everyone.</li>
+                    <li><strong>Continuous Improvement:</strong> We value your feedback and strive to enhance our features and services continually.</li>
+                    <li><strong>Dedicated Support:</strong> Have questions? Our support team is here to assist you with any inquiries or concerns.</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Join Our Community</h2>
+                <p>At CGPA Calculator, we believe in fostering a community of learners. Connect with us on social media to share your experiences, tips, and academic journeys. Together, we can support each other in achieving our educational aspirations!</p>
+            </section>
+    
+            <section>
+                <h2>Thank You!</h2>
+                <p>Thank you for choosing CGPA Calculator for your GPA and CGPA calculations. We look forward to being part of your academic success!</p>
+            </section>
+    </section>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-row footer-links">
+                © CGPA & GPA Calculator 2024.
+           
+            <div class="footer-row social-media">
+                <a href="https://x.com/unaqqash6" target="_blank" title="Twitter">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDhZBUZSCsW-qt3ZynfqJQYfvrtRkPyECCnoUs0ak2jpxNDKzaIt7Z_8zvDxwMFEq1YXHdSoAddeTazZ-zoqGIdNCjKbWzXgJxB8YfCmSccclOY3Ylc80p09o4gRJSV6v7LDnRJ4W3OpBtpJwvw6Zv-J5ruHDA1svIPdno39NH5kQmQiDnxjsTYai5hg0N/s512/twitter-icon.png" alt="Twitter">
+                
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgMT6-wEgoRu3vYxGfHbR86sWZp5W0ahXhqbgeFu-u5WurHUEuW6o3BX9ng-iUSQtT84s9iVLsho8hvb2T2iEv7Jb8X65OZJ532dsbn9EQ-dJDrVGBiZmvRsxaKWOC1PKYrshprPu2kDtK2idvnj56nXjpEvrSsR2q5vQORPcN6UlRbF8PwCqZnyg3Gy-jG/s320/facebook-icon.png" alt="Facebook">        
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script>
+        
+
+ 
+
+ 
+ 
+ 
+ 
+        function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+}
+
+// Close menu if clicked outside
+document.addEventListener('click', event => {
+    if (!event.target.closest('.header')) {
+        const menu = document.getElementById('menu');
+        if (menu.classList.contains('show')) {
+            menu.classList.remove('show');
+        }
+    }
+});
+
+
+        function handleClickOutside(event) {
+            const menu = document.getElementById('menu');
+            const toggleButton = document.querySelector('.toggle-button');
+            if (!menu.contains(event.target) && !toggleButton.contains(event.target)) {
+                menu.style.display = 'none';
+                document.removeEventListener('click', handleClickOutside, true);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+    const savedMode = localStorage.getItem('mode');
+    const body = document.body;
+    const container = document.querySelector('.container');
+
+    if (savedMode) {
+        body.classList.add(savedMode);
+        container.classList.add(savedMode);
+    } else {
+        body.classList.add('mode-1');
+        container.classList.add('mode-1');
+    }
+});
+
+function toggleMode() {
+    const body = document.body;
+    const container = document.querySelector('.container');
+    const currentMode = body.classList.contains('mode-1') ? 'mode-1' : 'mode-2';
+
+    if (currentMode === 'mode-1') {
+        body.classList.replace('mode-1', 'mode-2');
+        container.classList.replace('mode-1', 'mode-2');
+    } else {
+        body.classList.replace('mode-2', 'mode-1');
+        container.classList.replace('mode-2', 'mode-1');
+    }
+
+    localStorage.setItem('mode', body.classList.contains('mode-1') ? 'mode-1' : 'mode-2');
+}
+
+    </script>
+</body>
+</html>
